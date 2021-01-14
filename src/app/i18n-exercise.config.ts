@@ -10,9 +10,20 @@ export const tranlationOverwrites = {
       miniCart: {
         count: '50',
       },
+      common: {
+        home: 'Home 🛒',
+      },
     },
   },
   ja: {
+    user: {
+      forgottenPassword: {
+        emailAddress: {
+          label: 'Direccion de E-mail 🐱‍🚀',
+          placeholder: 'Direccion de E-mail 🐱‍',
+        },
+      },
+    },
     common: {
       miniLogin: {
         signInRegister: 'Entra o Registrate 🤗',
@@ -23,18 +34,32 @@ export const tranlationOverwrites = {
       miniCart: {
         count: '100',
       },
+      common: {
+        home: 'Inicio 🎪',
+      },
     },
   },
   de: {
+    user: {
+      forgottenPassword: {
+        emailAddress: {
+          label: 'E-Mail-Addresse ✔',
+          placeholder: 'E-Mail-Addresse 🎶 ‍',
+        },
+      },
+    },
     common: {
       miniLogin: {
-        signInRegister: "entrer ou s'inscrire",
+        signInRegister: 'eingeben oder registrieren 🤩',
       },
       searchBox: {
-        placeholder: 'effectuez votre recherche...',
+        placeholder: 'Führen Sie Ihre Suche durch...',
       },
       miniCart: {
         count: '20',
+      },
+      common: {
+        home: 'Haus 📺',
       },
     },
   },

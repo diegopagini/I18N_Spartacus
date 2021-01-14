@@ -6,13 +6,11 @@ import { translations, translationChunksConfig } from '@spartacus/assets';
 import { B2cStorefrontModule } from '@spartacus/storefront';
 import { ConfigModule, I18nConfig } from '@spartacus/core';
 import { tranlationOverwrites } from './i18n-exercise.config';
-import { CustomSearchboxModule } from './custom-searchbox/custom-searchbox.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    CustomSearchboxModule,
     ConfigModule.withConfig({
       i18n: {
         resources: tranlationOverwrites,
