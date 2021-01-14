@@ -6,11 +6,13 @@ import { translations, translationChunksConfig } from '@spartacus/assets';
 import { B2cStorefrontModule } from '@spartacus/storefront';
 import { ConfigModule, I18nConfig } from '@spartacus/core';
 import { tranlationOverwrites } from './i18n-exercise.config';
+import { CustomSearchboxModule } from './custom-searchbox/custom-searchbox.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    CustomSearchboxModule,
     ConfigModule.withConfig({
       i18n: {
         resources: tranlationOverwrites,
@@ -19,19 +21,19 @@ import { tranlationOverwrites } from './i18n-exercise.config';
     B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          baseUrl: 'https://molinos-ci.qubikdigital.com:9002/',
+          baseUrl: 'https://spartacus-demo.eastus.cloudapp.azure.com:8443',
           prefix: '/occ/v2/',
         },
       },
       context: {
-        currency: ['ARS'],
-        language: ['es', 'en'],
-        baseSite: ['molinosStore'],
+        currency: ['USD'],
+        language: ['en', 'de', 'ja'],
+        baseSite: ['powertools-spa'],
       },
       i18n: {
         resources: translations,
         chunks: translationChunksConfig,
-        fallbackLang: 'es',
+        fallbackLang: 'de',
       },
       features: {
         level: '2.1',
